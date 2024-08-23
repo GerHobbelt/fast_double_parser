@@ -205,6 +205,7 @@ inline int leading_zeroes(uint64_t input_num) {
   if (_BitScanReverse(&leading_zero, (uint32_t)input_num))
     return (int)(63 - leading_zero);
 #endif // _WIN64
+	return 64;
 #else
   return __builtin_clzll(input_num);
 #endif // _MSC_VER
