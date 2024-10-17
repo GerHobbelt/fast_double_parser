@@ -330,7 +330,7 @@ bool basic_test_64bit(std::string vals, double val) {
   return true;
 }
 
-int main() {
+int main(void) {
   const int evl_method = FLT_EVAL_METHOD;
   printf("FLT_EVAL_METHOD = %d\n", evl_method);
   bool is_pow_correct{1e-308 == std::pow(10,-308)};
